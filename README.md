@@ -1,2 +1,2 @@
-# http://winged.github.io
+# winged
 My Berserk site
