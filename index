@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/large.png" />
+    <title> Winged | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        
+        body {
+                background: url('img/gd22GRANDE.png') no-repeat center center fixed;
+            }
+
+        .top {
+            margin-top: 5px;
+        }
+
+        .subtop{
+                background: black;
+                border-bottom: 1px solid transparent;
+                border-top: 1px solid transparent;
+                border-left: 1px solid rgba(0, 0, 0, 0);
+                display: block;
+                font-size: 10px;
+                line-height: 30px;
+                text-decoration: none;
+                width: 140%;
+        }
+
+        #inp{
+            
+            padding: 4px;
+        }
+
+        .menu li:hover > a, .menu li:focus > a{
+                color: #D4302A;
+                border-left: 3px solid white;
+                transition: 0.55s;
+                outline: 0;
+        }
+
+        .submenu li:hover > a, .menu > li:focus {
+                color:#afadad;
+                border-left: none;
+                outline: 0;
+        }
+
+
+        .column {
+            float: none; 
+            width: 95%;
+            padding: 15px;
+            margin: 0px auto 20px auto;
+        }
+
+        .content {
+            width: 50%;
+            height: -webkit-fill-available;
+            background-color: rgba(206, 204, 204, 0);
+            border-left: none;
+            border-right: none;
+            margin: auto;
+        }
+
+        .conteudo {
+    
+            text-align: center;
+        }
+
+        #welcome {
+            font-size: 20px;
+            font-weight: 100;
+            font-family: inherit;
+            margin: 830px auto 0px auto;
+            color: white;
+        }
+
+        .subtop{
+            width: 100%;
+        }
+
+        .menu a {
+            margin-left: 
+                
+        }
+
+        .submenu li {
+            margin-left: 5px;
+        }
+
+        #sub2{
+                font-size: 16px;
+            }
+
+
+        @media only screen  and (max-width: 800px) {
+            body {
+                background: url('img/mobile2.png') no-repeat center center fixed;
+            }
+        }
+
+
+        @media only screen and (max-width: 567px){
+            .content {
+                background-color: transparent !important;
+            }
+        }
+
+
+        @media only screen and (max-width: 800px){
+            .menu li {
+                padding: 0px;
+                float: none;
+            }
+
+            .submenu li {
+                margin-left: auto;
+            }
+        }
+
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <a name="home" id="home"></a>
+        <div class="top">
+            <ul class="menu">
+
+                
+                <li class="menuiten"><a href="#"> Choose your maniac here!</a>
+                    <ul class="submenu">
+                        <li class="subtop"><a href="griffith.html">The White Hawk</a></li>
+                        <li class="subtop"><a href="guts.html">The Black Swordsman</a></li>
+                    </ul>
+            </ul>
+        </div>
+    <div class="content">
+        <div class="secondNav">
+            
+        </div>
+        <div class="conteudo">
+            
+        </div>
+        <script type="text/javascript">
+
+        function hideshow(img,notwanted,notwanted2,txt,notwanted3,notwanted4) {
+                document.getElementById(img).style.display='block';
+                document.getElementById(txt).style.display='block';
+                document.getElementById(notwanted).style.display='none';
+                document.getElementById(notwanted2).style.display='none';
+                document.getElementById(notwanted3).style.display='none';
+                document.getElementById(notwanted4).style.display='none';
+
+        }
+
+        function goToAnchor(anchor) {
+            var loc = document.location.toString().split('#')[0];
+            document.location = loc + '#' + home;
+        return false;
+        }
+
+        </script>
+
+        <div class="footer">
+            <p id="footer">Welcome to Winged!</p>
+        </div>
+</body>
+
+
+</html>
