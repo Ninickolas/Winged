@@ -1,2 +1,2 @@
-# https://winged/index.html
+# https://ninickolas.github.io/Winged/
 My Berserk site
