@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/large.png" />
+    <title> Winged | Videos </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="js/jq.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style type="text/css">
+    .content {
+        height: 150%;
+        background-color: rgba(253, 253, 253, 0.55);
+ 
+    }
+
+
+    .video {
+        width: 800px;
+        height: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 3px solid black;
+
+    }
+
+    .but{
+        text-decoration: none;
+        background: none;
+        border: none;
+        color: black;
+        font-size: 17px;
+        font-weight: 100;
+        font-family : inherit;
+        padding: 0 15px 0 15px;
+    }
+
+    .btn-group{
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+
+    .but:hover{
+        cursor: pointer;
+        border-bottom: 1px red solid;
+        transition: 0.85s;
+        
+    }
+
+    .but:focus {
+        outline:0;
+        font-weight: 400;
+        border-bottom: 1px red solid;
+        
+    }
+
+
+    .top-vid {
+        background: none;
+        list-style: none;
+        padding: 30px 0 30px 0;
+        margin: 0;
+    }
+
+
+    .menu-vid, .menu-vid ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .subtop-vid{
+        background: black;
+        border-bottom: 1px solid #2f2f2f;
+        border-top: 1px solid #2f2f2f;
+        border-left: 1px solid rgba(0, 0, 0, 0);
+        display: block;
+        font-size: 10px;
+        line-height: 30px;
+        text-decoration: none;
+    }
+
+
+    .menu-vid > li {
+        display: -webkit-inline-box;
+    }
+    
+    .menu-vid > li:first-child {
+        border-radius: 5px 0 0;
+    }
+            
+    .menu-vid a {
+        border-left: 3px solid rgba(0, 0, 0, 0);
+        color: white;
+        display: block;
+        font-size: 16px;
+        padding: 0 25px;
+        text-decoration: none;
+        font-weight: 100;
+                
+    }
+
+    .menu-vid li:hover {
+        background-color: none;
+    }
+    .menu-vid li:hover > a {
+        border-bottom: 1px solid #C4302B;
+        transition: 0.65s;
+    }
+
+    .submenu-vid li:hover > a {
+        color: #a2a09a;
+        border-left: none;
+    }
+
+    /* submenu styles */
+    .submenu-vid {
+        left: 0;
+        max-height: 0;
+        position: absolute;
+        top: 155%;
+        z-index: 0;
+        -webkit-perspective: 400px;
+        -moz-perspective: 400px;
+        -ms-perspective: 400px;
+        -o-perspective: 400px;
+        perspective: 400px;
+        }
+
+    .submenu-vid {
+        left: 0;
+        max-height: 0;
+        position: absolute;
+        top: 155%;
+        z-index: 0;
+        -webkit-perspective: 400px;
+        -moz-perspective: 400px;
+        -ms-perspective: 400px;
+        -o-perspective: 400px;
+        perspective: 400px;
+    }
+    .submenu-vid li {
+        opacity: 0;
+        -webkit-transform: rotateY(90deg);
+        -moz-transform: rotateY(90deg);
+        -ms-transform: rotateY(90deg);
+        -o-transform: rotateY(90deg);
+        transform: rotateY(90deg);
+        -webkit-transition: opacity .4s, -webkit-transform .5s;
+        -moz-transition: opacity .4s, -moz-transform .5s;
+        -ms-transition: opacity .4s, -ms-transform .5s;
+        -o-transition: opacity .4s, -o-transform .5s;
+        transition: opacity .4s, transform .5s;
+    }
+    
+    .menu-vid .submenu-vi li:hover{
+        border-left: 3px solid red;
+        border-radius: 0;
+                
+    }
+    
+    .menu-vid > li:hover .submenu-vid, .menu-vid > li:focus .submenu-vid {
+        max-height: 2000px;
+        z-index: 10;
+    }
+    
+    .menu-vid > li:hover .submenu-vid li, .menu-vid > li:focus .submenu-vid li {
+        opacity: 1;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }   
+
+
+
+
+    @media only screen and (max-width: 570px) {
+        .video {
+            width: 350px;
+            height: 190px;
+            margin: auto !important;
+        }
+    }
+
+    @media only screen and (max-width: 1680px) {
+        div.content {
+            width: 100%;
+        }
+    }
+    
+
+    #video-container {
+        margin-top: 10px;
+    }
+
+    #menu-bar-2 {
+        margin-bottom: 0;
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+    <a name="home" id="home"></a>
+        <div class="top">
+            <ul class="menu">
+                <li class="menuiten"><a href="index.html">Home</a>
+                    <ul class="submenu">
+                        <li class="subtop"><a href="index.html">Home</a></li>
+                        <li class="subtop"><a href="guts.html">Guts</a></li>
+                        <li class="subtop"><a href="griffith.html">Griffith</a></li>
+                    </ul>
+                <li class="menuiten"><a href="#">Story</a>
+                    <ul class="submenu">
+                        <li class="subtop"><a href="guts.html">Guts</a></li>
+                        <li class="subtop"><a href="griffith.html">Griffith</a></li>
+                    </ul>
+                <li class="menuiten"><a href="#">Philosofy</a>
+                    <ul class="submenu">
+                        <li class="subtop"><a href="psy2.html">Guts</a></li>
+                        <li class="subtop"><a href="psy.html">Griffith</a></li>
+                    </ul>
+                <li class="menuiten"><a href="#">Abilities</a>
+                    <ul class="submenu">
+                        <li class="subtop"><a href="ab2.html">Guts</a></li>
+                        <li class="subtop"><a href="ab.html">Griffith</a></li>
+                    </ul>
+
+                <li class="menuiten hidemen"><a href="#">More</a>
+                    <ul class="submenu submenu-especial">
+                        <li class="subtop hidemen"><a href="#">Login</a></li>
+                        <li class="subtop"><a href="mid.html">Media</a></li>
+                        <li class="subtop"><a href="https://readberserk.com/">Read</a></li>
+                    </ul>
+            </ul>
+        </div>
+    <div class="content">
+        <div class="secondNav">
+            <img a href="index.html" id="logo3" src="img/logo3.png">
+        </div>
+        <div id="menu-bar-2-container">
+            <div id="menu-bar-2">
+                <a href="mid.html">MEDIA</a>
+                <a href="https://readberserk.com/">READ</a>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="btn-group">
+                <button onclick="return hideshow('watch','pxa','ea','wnc');" class="but" type="button">Why Watching?</button>
+                <button onclick="return hideshow('pxa','watch','ea','wnc');" class="but" type="button">Protagonism X Antagonism</button>
+                <button onclick="return hideshow('ea','watch','pxa','wnc');" class="but" type="button">Extreme Analysis</button>
+                <button onclick="return hideshow('wnc','watch','pxa','ea');" class="but" type="button">Watch & Cry</button>
+            </div>
+
+            <div id="video-container">
+
+                <div style="display: none" id="watch">
+                    <iframe class="video" id="vid1" src="https://www.youtube.com/embed/rQaUEr65eaI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class=" video" id="vid11" src="https://www.youtube.com/embed/jqlbLB7Owl0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div style="display: none" id="pxa">
+                    <iframe class=" video" id="vid3" src="https://www.youtube.com/embed/HIzU6KAGj5Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class=" video" id="vid3" src="https://www.youtube.com/embed/aBehPxqJOqU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div style="display: none" id="ea">
+                    <iframe class="video" id="vid5" src="https://www.youtube.com/embed/A4JVtQwWHBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video" id="vid7" src="https://www.youtube.com/embed/nu39VR7Ug8k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe class="video" id="vid8" src="https://www.youtube.com/embed/3ELSOiKQVbc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div style="display: none" id="wnc">
+                    
+                    <iframe class="video" id="vid9" src="https://www.youtube.com/embed/Qzf1lp-DSbs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+
+        </div>
+        <script type="text/javascript">
+ 
+
+            function hideshow(videos,notwanted,notwanted2,notwanted3) {
+                document.getElementById(videos).style.display='block';
+                document.getElementById(notwanted).style.display='none';
+                document.getElementById(notwanted2).style.display='none';
+                document.getElementById(notwanted3).style.display='none';
+            } 
+
+        </script>
+</body>
+
+
+</html>
